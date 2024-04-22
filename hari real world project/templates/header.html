@@ -1,0 +1,65 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/headerstyle.css' %}">
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #E0FFFF;">
+  <a class="navbar-brand" href="#" style="margin-left:20%;">
+    <img src="{% static 'images/logo.png' %}" width="250" height="100" alt="">
+  </a>
+          <ul class="nav-item login {{activate_home}} " style="margin:20px auto;">
+            <a class="nav-link" style="color: black;" href="/">LOGIN<span class="sr-only"></span></a>
+          </ul>
+
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light border-0 shadow sticky-top" style="background-color: #B0CFDE;">
+    <div class="menubar" role="menubar" ></div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item {{activate_home}}" >
+            <a class="nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item {{activate_product}}">
+            <a class="nav-link" href="/about">ABOUT US</a>
+          </li>
+            <li class="nav-item {{activate_aboutUs}}">
+            <a class="nav-link" href="{% url 'service' %}">SERVICES</a>
+          </li>
+           <li class="nav-item {{activate_contact}}" >
+            <a class="nav-link" href="/pages/contact">BOOK APPOINTMENT</a>
+          </li>
+            <li class="nav-item {{activate_contact}}" >
+            <a class="nav-link" href="/pages/contact">CONTACT US</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+<!--        <form class="form-inline my-2 my-lg-0" style="margin-right: 15%;">-->
+<!--          {% if user.is_authenticated %}-->
+<!--             <ul class="nav-item">-->
+<!--                <img class="img rounded-circle mx-2 nav-info" src="{{request.user.profile.profile_pic.url}}"/>-->
+<!--            </ul>-->
+<!--             <ul class="nav-item">-->
+<!--                <a class=" mx-2 nav-info" href="/account/profile" style="text-decoration: none;">{{request.user.username}}</a>-->
+<!--            </ul>-->
+<!--            <ul class="nav-item mx-2">-->
+<!--                <a class="btn btn-warning mx-2 nav-info" href="/account/logout">Logout</a>-->
+<!--            </ul>-->
+<!--            {% else %}-->
+<!--            <ul class="nav-item">-->
+<!--                <a class="btn btn-warning mx-2 nav-info" href="/account">Login</a>-->
+<!--            </ul>-->
+<!--            <ul class="nav-item">-->
+<!--                <a class="btn btn-success mx-2 nav-info" href="/account/register">Register</a>-->
+<!--            </ul>-->
+<!--            {% endif %}-->
+<!--        </form>-->
+      </div>
+</nav>

@@ -1,0 +1,20 @@
+.navbar{
+    margin-top: 0px;
+
+}
+.login{
+    margin-left: 500px;
+}
+
+.navbar-nav{
+    float: right;
+    margin-left:300px;
+
+}
+.navbar-brand{
+    margin-left:15%;
+    margin-right:50%;
+}
+.nav-link{
+    color: white;
+}

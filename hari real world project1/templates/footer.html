@@ -1,0 +1,102 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/footerstyle.css' %}">
+
+<footer class="page-footer font-small blue pt-4">
+
+  <div class="container-fluid text-center text-md-left">
+      <div class="container">
+    <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3">
+        <h5 class="text-uppercase">SAVIOR</h5>
+        <p>Need a doctor for Checkup?</p>
+          <a class="nav-link" href="pages/get_membership"><button type="submit" class="btn btn-primary" >
+            Get an Appointment</button></a>
+      </div>
+      <hr class="clearfix w-100 d-md-none pb-3">
+      <div class="col-md-3 mb-md-0 mb-3">
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="pages/aboutus">About US</a>
+          </li>
+          <li>
+            <a href="pages/contact">Contacts</a>
+          </li>
+          <li>
+            <a href="product/product">Products</a>
+          </li>
+          <li>
+            <a href="discounts">Discounts</a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="col-md-3 mb-md-0 mb-3">
+        <h5 class="text-uppercase">Contacts</h5>
+
+        <ul class="list-unstyled">
+          <li>
+              <i class="fas fa-phone"></i>
+            <a href="#!">123-456-7891</a>
+          </li>
+          <li>
+              <i class="fas fa-envelope-open"></i>
+            <a href="#!">saviorhealth@gmail.com</a>
+          </li>
+          <li>
+              <a href="#!">Also visit us at</a>
+            <li>
+            <a class="nav-link"> <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-messenger"></i>
+            <i class="fab fa-skype"></i>
+            <i class="fab fa-twitter-square"></i></a>
+            </li>
+
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+      </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light border-0 shadow" style="background-color: #B0CFDE;">
+
+    <img src="{% static 'images/logo.png' %}" width="250" height="100" alt="" style="margin-left:200px;">
+
+    <div class="menubar" role="menubar" ></div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item {{activate_home}}" >
+            <a class="nav-link" href="/">HOME <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item {{activate_product}}">
+            <a class="nav-link" href="/product/product">ABOUT US</a>
+          </li>
+            <li class="nav-item {{activate_aboutUs}}">
+            <a class="nav-link" href="/pages/aboutus">SERVICES</a>
+          </li>
+           <li class="nav-item {{activate_contact}}" >
+            <a class="nav-link" href="/pages/contact">BOOK APPOINTMENT</a>
+          </li>
+            <li class="nav-item {{activate_contact}}" >
+            <a class="nav-link" href="/pages/contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+  <div class="footer-copyright text-center py-3">© Developbed by SAVIOR.com
+  </div>
+</footer>
